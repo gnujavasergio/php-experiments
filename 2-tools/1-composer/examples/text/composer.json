@@ -1,0 +1,31 @@
+{
+    "name": "gnujavasergio/text",
+    "description": "Formato de texto",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "files": [
+            "src/helpers/helpers.php"
+        ],
+        "classmap": [
+            "database/seeds",
+            "database/factories"
+        ],
+        "psr-4": {
+            "Text\\": "src/Text"
+        }
+    },
+    "authors": [
+        {
+            "name": "Sergio Ochoa",
+            "email": "sochoa@openkm.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require-dev": {
+        "phpunit/phpunit": "9.5.x-dev"
+    },
+    "require": {
+        "nesbot/carbon": "2.x-dev"
+    }
+}
