@@ -7,14 +7,17 @@
 ```bash
 sudo add-apt-repository ppa:ondrej/php
 ```
+
 2. **Update cache**: Después de habilitar el repositorio apt, actualice la caché en su sistema
 ```bash
 sudo apt update
 ```
+
 3. **Instalación de PHP**: a continuación, instale PHP 8.0 en el sistema Ubuntu.
 ```bash
 sudo apt install php8.0
 ```
+
 Presione `Y` para cualquier confirmación solicitada por el instalador.
 
 4. Para poder saber que tenemos instalado de php
@@ -35,6 +38,7 @@ php-apcu-bc					install
 .......
 .......
 ```
+
 ## Paso 2
 - Habilitar y desabilitar una version de php
 ```bash
@@ -50,17 +54,26 @@ sudo systemctl restart apache2
 Ahora, instale los módulos de PHP necesario para su aplicación.
 Algunos de los modulos mas comunes
 ```bash
-sudo apt install php-common php-opcache php-mcrypt php-cli php-gd php-curl php-mysql
+sudo apt install php7.4-common php7.4-opcache php7.4-mcrypt php7.4-cli php7.4-gd php7.4-curl php7.4-mysql
+sudo apt install php8.0-common php8.0-opcache php8.0-mcrypt php8.0-cli php8.0-gd php8.0-curl php8.0-mysql
+sudo apt install php8.1-common php8.1-opcache php8.1-mcrypt php8.1-cli php8.1-gd php8.1-curl php8.1-mysql
+sudo apt install php8.2-common php8.2-opcache php8.2-mcrypt php8.2-cli php8.2-gd php8.2-curl php8.2-mysql
 ```
+
 Utilice el siguiente comando para buscar todos los módulos de PHP 8.0.
 ```bash
 sudo apt search php8.0-*
 ```
+
 Lugo instale los modulos de PHP requeridos.
-El siguiente comando instalara algunos módulos php de uso
+El siguiente comando instalará algunos módulos php de uso
 ```bash
-sudo apt install libapache2-mod-php8 php8-cli php8.0-gd php8.0-xml php8.0-soap php8.0-mbstring php8.0-mysql php8-imagick php8-recode php8-tidy php8-xmlrpc
+sudo apt install libapache2-mod-php7.4 php7.4-xml php7.4-soap php7.4-mbstring php7.4-imagick php7.4-tidy php7.4-xmlrpc
+sudo apt install libapache2-mod-php8.0 php8.0-xml php8.0-soap php8.0-mbstring php8.0-imagick php8.0-tidy php8.0-xmlrpc
+sudo apt install libapache2-mod-php8.1 php8.1-xml php8.1-soap php8.1-mbstring php8.1-imagick php8.1-tidy php8.1-xmlrpc
+sudo apt install libapache2-mod-php8.2 php8.2-xml php8.2-soap php8.2-mbstring php8.2-imagick php8.2-tidy php8.2-xmlrpc
 ```
+
 ## Paso 3: Ver la versión de PHP
 Ahora use el siguiente comando para verificar la versión de PHP instalada
 en su sistema. También puede utilizar otros métodos para comprobar la versión de PHP.
@@ -72,9 +85,11 @@ Copyright (c) The PHP Group
 Zend Engine v4.0.1, Copyright (c) Zend Technologies
     with Zend OPcache v8.0.1, Copyright (c), by Zend Technologies
 ```
+
 ## Paso 4: Cambiar la versión predeterminada de php.
 Puede cambiar fácilmente entre varias versiones de PHP instaladas en cualquier sistema.
 Ejecute el siguiente comando en la terminal:
+
 ```bash
 sudo update-alternatives --config php
 ```
@@ -98,6 +113,7 @@ sudo add-apt-repository ppa:ondrej/php
 sudo apt-get update
 sudo apt-get install -y php7.4
 ```
+
 Ahora use el siguiente comando para verificar la versión de php instalada en su sistema.
 ```
 php -v
@@ -115,6 +131,7 @@ sudo add-apt-repository ppa:ondrej/php
 sudo apt-get update
 sudo apt-get install -y php7.3
 ```
+
 Ahora use el siguiente comando para verificar la versión de php instalada en su sistema.
 ```bash
 php -v
@@ -132,6 +149,7 @@ sudo add-apt-repository ppa:ondrej/php
 sudo apt-get update
 sudo apt-get install -y php7.2
 ```
+
 Ahora use el siguiente comando para verificar la versión de php instalada en su sistema.
 ```bash
 php -v
@@ -149,6 +167,7 @@ sudo add-apt-repository ppa:ondrej/php
 sudo apt-get update
 sudo apt-get install -y php7.1
 ```
+
 Ahora use el siguiente comando para verificar la versión de php instalada en su sistema.
 ```bash
 php -v
@@ -165,6 +184,7 @@ sudo add-apt-repository ppa:ondrej/php
 sudo apt-get update
 sudo apt-get install -y php7.0
 ```
+
 Ahora use el siguiente comando para verificar la versión de php instalada en su sistema.
 ```bash
 php -v
@@ -174,7 +194,6 @@ Copyright (c) 1997-2017 The PHP Group
 Zend Engine v3.0.0, Copyright (c) 1998-2017 Zend Technologies
     with Zend OPcache v7.0.33-5+ubuntu18.04.1+deb.sury.org+1, Copyright (c) 1999-2017, by Zend Technologies
 ```
-
 
 ## Configurar errores en php
 - Buscar display_errors

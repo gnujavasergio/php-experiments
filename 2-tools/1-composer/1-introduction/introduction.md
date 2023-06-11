@@ -13,7 +13,7 @@ proporciona un estandar para administrar, descargar e instalar dependencias
 
 ### Instalar en linux
 
-- Español - https://www.digitalocean.com/community/tutorials/como-instalar-y-utilizar-composer-en-ubuntu-18-04-es
+- Español - https://www.digitalocean.com/community/tutorials/how-to-install-and-use-composer-on-ubuntu-20-04-es
 - Ingles - https://www.digitalocean.com/community/tutorials/how-to-install-and-use-composer-on-ubuntu-20-04
 - Ingles - https://www.digitalocean.com/community/tutorials/how-to-install-composer-on-ubuntu-20-04-quickstart
 
